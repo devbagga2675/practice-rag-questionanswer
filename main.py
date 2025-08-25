@@ -31,8 +31,8 @@ st.write(
 
 # --- API Key Management ---
 try:
-    # gemini_api_key = st.secrets["GOOGLE_API_KEY"]
-    gemini_api_key = os.environ.get("GOOGLE_API_KEY")
+    gemini_api_key = st.secrets["GOOGLE_API_KEY"]
+    # gemini_api_key = os.environ.get("GOOGLE_API_KEY")
 except KeyError:
     st.error("GOOGLE_API_KEY is not set. Please add it to your Streamlit secrets.")
     st.stop()
